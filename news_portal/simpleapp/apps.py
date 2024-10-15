@@ -6,9 +6,4 @@ class SimpleappConfig(AppConfig):
     name = 'simpleapp'
 
 
-class SimpleappConfig(AppConfig):
-    name = 'simpleapp'
 
-    def ready(self):
-        from .apscheduler import start
-        start()
